@@ -7,6 +7,11 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+/**
+ * Entity for representing {@code PRICE SLAB} of the {@code Surveillance}
+ * 
+ * @author Pradeep Velpula
+ */
 @Entity
 @Table(name = "SURVEILLANCE_PRICE_SLABS")
 public class SurveillancePriceSlab {

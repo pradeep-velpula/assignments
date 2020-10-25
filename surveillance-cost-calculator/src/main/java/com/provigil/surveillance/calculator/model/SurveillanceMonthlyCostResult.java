@@ -8,8 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Data structure representing the response containing a {@link List} 
- * of calculated costs {@link SurveillanceMonthlyCostResult} for each 
- * {@link SurveillanceSubscription}.
+ * of calculated costs {@link SurveillanceSubscription}.
  * @author Pradeep Velpula
  *
  */

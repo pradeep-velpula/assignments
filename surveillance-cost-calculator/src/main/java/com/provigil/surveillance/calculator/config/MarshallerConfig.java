@@ -12,6 +12,12 @@ import com.provigil.surveillance.calculator.model.SurveillanceMonthlyCostRequest
 import com.provigil.surveillance.calculator.model.SurveillanceMonthlyCostResult;
 import com.provigil.surveillance.calculator.model.SurveillanceSubscription;
 
+/**
+ * Configuration which defines a Bean of type {@link Jaxb2Marshaller}.<br>
+ * {@link Jaxb2Marshaller} can be used to marshall to XML and unmarshall from XML
+ * 
+ * @author Pradeep Velpula
+ */
 @Configuration
 public class MarshallerConfig {
   

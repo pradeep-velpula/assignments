@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Data structure representing the subscription.<p>
  * When using this for generating {@link SurveillanceMonthlyCostRequest}, 
- * {@code cost} and {@code error} is not required.<p>
+ * {@code cost} and {@code error} are not required.<p>
  * When using this for generating {@link SurveillanceMonthlyCostResult}, 
  * only {@code id} and ({@code cost} or {@code error}) are required.<p>
  * @author Pradeep Velpula

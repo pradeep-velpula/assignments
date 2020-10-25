@@ -2,7 +2,14 @@ package com.provigil.surveillance.calculator.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
+/**
+ * Configuration which a Bean to expose properties from application.properties whose 
+ * prefix is {@code 'surveillance-cost-calculator'}.<br>
+ * 
+ * @author Pradeep Velpula
+ */
 @Configuration
 @ConfigurationProperties(prefix = "surveillance-cost-calculator")
 public class SurveillanceCostCalculatorConfigProperties {

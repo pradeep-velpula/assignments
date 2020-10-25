@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Data structure representing the request containing a {@link List} 
- * of subscriptions {@link SurveillanceMonthlyCostRequest}.
+ * of subscriptions {@link SurveillanceSubscription}.
  * @author Pradeep Velpula
  *
  */

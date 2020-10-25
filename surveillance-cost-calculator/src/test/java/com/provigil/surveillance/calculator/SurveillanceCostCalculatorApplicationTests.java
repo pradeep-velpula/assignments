@@ -29,6 +29,35 @@ import com.provigil.surveillance.calculator.repository.SurveillancePriceSlabRepo
 import com.provigil.surveillance.calculator.repository.SurveillanceSubscriptionPlanRepository;
 import com.provigil.surveillance.calculator.service.SurveillanceSubscriptionService;
 
+/**
+ * This is a Test class for testing 'Surveillance Cost Calculator' Application 
+ * built on Spring Boot.<br>
+ * 
+ * <h3>Test Cases</h3>
+ * - <b>contextLoads:</b> This will test if the context is loaded properly or not by 
+ * checking on a repository instance<br>
+ * - <b>testDataLoaded:</b> This will test if the master data is loaded properly or not<br>
+ * - <b>testSurveillanceCostCalculator:</b> <br>
+ * This test invokes 
+ * {@link SurveillanceSubscriptionService#getMonthlyCostResult(InputStream)} 
+ * by passing {@code test-subscriptions-01.xml} as an {@link InputStream} and <br>
+ * holds the result {@link SurveillanceMonthlyCostResult} and <br>
+ * outputs the results XML containing all the calculated costs and <b>FAILS</b> if <br>
+ * -- one of the subscriptions passed in the XML file {@code test-subscriptions-01.xml} 
+ * has an invalid area or location or plan<br>
+ * -- one of the costs passed in the XML file {@code test-subscriptions-01.xml} 
+ * doesn't match with the calculated cost in the result {@link SurveillanceMonthlyCostResult}
+ * 
+ * <h3>Environment Used</h3>
+ * - Java11<br>
+ * - Maven
+ * 
+ * <h3>Execution Steps</h3>
+ * <b>Run Tests:</b> {@code mvn clean test} (from directory surveillance-cost-calculator)<br>
+ * 
+ * @author Pradeep Velpula
+ *
+ */
 @SpringBootTest
 @EnableConfigurationProperties(SurveillanceCostCalculatorConfigProperties.class)
 public class SurveillanceCostCalculatorApplicationTests {

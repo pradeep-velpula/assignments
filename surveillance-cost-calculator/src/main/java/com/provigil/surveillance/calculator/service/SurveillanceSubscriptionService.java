@@ -9,7 +9,7 @@ import com.provigil.surveillance.calculator.model.SurveillanceMonthlyCostResult;
 import com.provigil.surveillance.calculator.model.SurveillanceSubscription;
 
 /**
- * A service to calculate Surveillance monthly costs.
+ * This is a service to calculate Surveillance monthly costs.
  * @author Pradeep Velpula
  *
  */
@@ -81,7 +81,7 @@ public interface SurveillanceSubscriptionService {
   
   /**
    * Generates an XML InputStream which contains the calculated costs 
-   * for the provided subscriptions XML file.<p>
+   * for the provided subscriptions XML {@link InputStream}.<p>
    * 
    * Example of input {@code subscriptionsXmlInputStream} whose element structure 
    * maps to {@link SurveillanceMonthlyCostRequest}
@@ -136,7 +136,7 @@ public interface SurveillanceSubscriptionService {
   
   /**
    * Generates an XML InputStream which contains the calculated costs 
-   * for the provided subscriptions XML file.<p>
+   * for the provided subscriptions XML {@link Reader}.<p>
    * 
    * Example of input {@code subscriptionsXmlReader} whose element structure 
    * maps to {@link SurveillanceMonthlyCostRequest}
@@ -327,7 +327,6 @@ public interface SurveillanceSubscriptionService {
   /**
    * Generates {@link SurveillanceMonthlyCostResult} which contains the calculated costs 
    * for the provided subscriptions {@link SurveillanceMonthlyCostRequest}.
-   * {@code cost} and {@code error} are not required and will be ignored.<p>
    *
    * @param surveillanceCostCalculatorRequest a {@link SurveillanceMonthlyCostRequest}  
    * containing subscriptions. Costs will be calculated for each {@link SurveillanceSubscription}.

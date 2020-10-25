@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.provigil.surveillance.calculator.model"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.provigil.surveillance.calculator"},{"l":"com.provigil.surveillance.calculator.config"},{"l":"com.provigil.surveillance.calculator.model"},{"l":"com.provigil.surveillance.calculator.repository"},{"l":"com.provigil.surveillance.calculator.service"}]

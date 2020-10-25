@@ -6,6 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * Entity for representing {@code LOCATION} of the {@code Surveillance}
+ * 
+ * @author Pradeep Velpula
+ */
 @Entity
 @Table(name = "SURVEILLANCE_LOCATIONS")
 public class SurveillanceLocation {

@@ -32,6 +32,13 @@ import com.provigil.surveillance.calculator.repository.SurveillanceLocationRepos
 import com.provigil.surveillance.calculator.repository.SurveillancePriceSlabRepository;
 import com.provigil.surveillance.calculator.repository.SurveillanceSubscriptionPlanRepository;
 
+/**
+ * Default implementation of {@link SurveillanceSubscriptionService}<br>
+ * This is a service to calculate Surveillance monthly costs.
+ * 
+ * @author Pradeep Velpula
+ *
+ */
 @Service
 public class SurveillanceSubscriptionServiceImpl implements SurveillanceSubscriptionService {
   

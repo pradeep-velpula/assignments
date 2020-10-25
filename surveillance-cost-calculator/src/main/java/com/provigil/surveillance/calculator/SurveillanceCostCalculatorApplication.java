@@ -2,6 +2,7 @@ package com.provigil.surveillance.calculator;
 
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,11 +15,38 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
+import com.provigil.surveillance.calculator.model.SurveillanceSubscription;
 import com.provigil.surveillance.calculator.repository.SurveillanceLocationRepository;
 import com.provigil.surveillance.calculator.repository.SurveillancePriceSlabRepository;
 import com.provigil.surveillance.calculator.repository.SurveillanceSubscriptionPlanRepository;
 import com.provigil.surveillance.calculator.service.SurveillanceSubscriptionService;
 
+/**
+ * This is a 'Surveillance Cost Calculator' Application built on Spring Boot.<br>
+ * Application takes an XML which contains the Surveillance subscriptions and outputs 
+ * the result XML containing all the costs.<p>
+ * Application invokes {@link SurveillanceSubscriptionService#getMonthlyCostResult(InputStream)} 
+ * by passing {@code subscriptions-01.xml} as an {@link InputStream} and outputs 
+ * the results XML containing all the calculated costs.
+ * 
+ * <h3>Environment Used</h3>
+ * - Java11<br>
+ * - Maven
+ * 
+ * <h3>Technical Stack Used</h3>
+ * - <b>Spring Boot and Spring Frameworks</b><br>
+ * - <b>JPA</b> (for CRUD operations on the master data via <b>Hibernate</b>)<br>
+ * - <b>JAXB</b> (for Marshaling and Unmarshaling XML)<br>
+ * - <b>H2</b> In-Memory Database (for simplification)
+ * 
+ * <h3>Execution Steps</h3>
+ * <b>1. Run Tests:</b> {@code mvn clean test}<br>
+ * <b>2. Build App:</b> {@code mvn clean install} (from directory surveillance-cost-calculator)<br>
+ * <b>3. Run App:</b> {@code java -jar target/jar-file-name.jar}
+ * 
+ * @author Pradeep Velpula
+ *
+ */
 @SpringBootApplication
 public class SurveillanceCostCalculatorApplication {
   
