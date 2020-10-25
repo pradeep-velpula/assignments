@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscriptions>
+   <subscription>
+      <id>1</id>
+      <area>2500</area>
+      <plan>MONTHLY</plan>
+      <location>Indoor</location>
+      <cost>5000</cost>
+   </subscription>
+   
+   <subscription>
+      <id>2</id>
+      <area>2500</area>
+      <plan>YEARLY</plan>
+      <location>Indoor</location>
+      <cost>3750</cost>
+   </subscription>
+   
+   <subscription>
+      <id>3</id>
+      <area>4000</area>
+      <plan>MONTHLY</plan>
+      <location>Outdoor</location>
+      <cost>8500</cost>
+   </subscription>
+   
+   <subscription>
+      <id>4</id>
+      <area>4000</area>
+      <plan>YEARLY</plan>
+      <location>Outdoor</location>
+      <cost>6500</cost>
+   </subscription>
+   
+   <subscription>
+      <id>5</id>
+      <area>25000</area>
+      <plan>MONTHLY</plan>
+      <location>Indoor</location>
+      <cost>28750</cost>
+   </subscription>
+   
+   <subscription>
+      <id>6</id>
+      <area>25000</area>
+      <plan>YEARLY</plan>
+      <location>Indoor</location>
+      <cost>18250</cost>
+   </subscription>
+</subscriptions>
