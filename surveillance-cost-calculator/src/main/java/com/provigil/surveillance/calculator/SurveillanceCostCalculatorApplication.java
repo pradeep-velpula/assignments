@@ -25,7 +25,7 @@ import com.provigil.surveillance.calculator.service.SurveillanceSubscriptionServ
  * This is a 'Surveillance Cost Calculator' Application built on Spring Boot.<br>
  * Application takes an XML which contains the Surveillance subscriptions and outputs 
  * the result XML containing all the costs.<p>
- * Application invokes {@link SurveillanceSubscriptionService#getMonthlyCostResult(InputStream)} 
+ * Application invokes {@link SurveillanceSubscriptionService#getMonthlyCostXml(InputStream)} 
  * by passing {@code subscriptions-01.xml} as an {@link InputStream} and outputs 
  * the results XML containing all the calculated costs.
  * 
