@@ -5,7 +5,7 @@ Application takes an XML which contains the Surveillance subscriptions and outpu
 
 Application invokes the below code by passing subscriptions-01.xml as an InputStream and outputs the results XML containing all the calculated costs.
 ```sh
-SurveillanceSubscriptionService.getMonthlyCostResult(InputStream)
+SurveillanceSubscriptionService.getMonthlyCostXml(InputStream)
 ```
 
 ## Documentation
